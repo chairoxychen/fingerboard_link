@@ -238,6 +238,14 @@
     border-radius:4px;
   }
   .notice-text .nw{ white-space:nowrap; }
+  .notice-body{ min-width:0; }
+  .notice-sub{
+    margin:6px 0 0;
+    font-size:12px;
+    line-height:1.65;
+    color:var(--muted);
+  }
+  .notice-sub .nw{ white-space:nowrap; }
   .notice-text{
     margin:0;
     font-size:13px;
@@ -417,7 +425,10 @@
   <!-- 公告（#print 錨點放在這裡，讓從實體書連結進來的讀者先看到公告） -->
   <div class="notice" id="print">
     <span class="notice-label">公告</span>
-    <p class="notice-text"><span class="nw">本書初版有幾處內文勘誤，</span><span class="nw">購買後敬請參閱、</span><span class="nw">對照勘誤資料夾</span><span class="nw">（書籍p.3 QR code）。</span></p>
+    <div class="notice-body">
+      <p class="notice-text"><span class="nw">本書初版有幾處內文勘誤，</span><span class="nw">購買後敬請參閱、</span><span class="nw">對照勘誤說明</span><span class="nw">（書籍p.3 QR code）。</span></p>
+      <p class="notice-sub"><span class="nw">＊Pubu電子書、</span><span class="nw">文鳥藝文研究室pdf檔，</span><span class="nw">已即時修正檔案。</span></p>
+    </div>
   </div>
 
   <!-- 實體書 -->
