@@ -213,6 +213,38 @@
     letter-spacing:0.02em;
   }
 
+  /* ---------- Notice ---------- */
+  .notice{
+    display:flex;
+    gap:10px;
+    align-items:flex-start;
+    margin:0 0 22px;
+    padding:12px 14px;
+    background:rgba(201,154,84,0.07);
+    border:1px solid rgba(201,154,84,0.28);
+    border-left:3px solid var(--brass);
+    border-radius:8px;
+    scroll-margin-top:24px;
+  }
+  .notice-label{
+    flex-shrink:0;
+    margin-top:1px;
+    padding:1px 7px;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:0.06em;
+    color:#1a1309;
+    background:var(--brass);
+    border-radius:4px;
+  }
+  .notice-text .nw{ white-space:nowrap; }
+  .notice-text{
+    margin:0;
+    font-size:13px;
+    line-height:1.7;
+    color:var(--cream);
+  }
+
   /* ---------- Section groups ---------- */
   .section{margin-bottom:38px; scroll-margin-top:24px;}
   .section-head{
@@ -382,8 +414,14 @@
   <h1 class="title">真的好想跟吉他指板變熟啊！</h1>
   <p class="subtitle">絕對實用的音階與和弦記憶筆記</p>
 
+  <!-- 公告（#print 錨點放在這裡，讓從實體書連結進來的讀者先看到公告） -->
+  <div class="notice" id="print">
+    <span class="notice-label">公告</span>
+    <p class="notice-text"><span class="nw">本書初版有幾處內文勘誤，</span><span class="nw">購買後敬請參閱、</span><span class="nw">對照勘誤資料夾</span><span class="nw">（書籍p.3 QR code）。</span></p>
+  </div>
+
   <!-- 實體書 -->
-  <div class="section" id="print">
+  <div class="section">
     <div class="section-head">
       <span class="marker"></span>
       <h2>實體書</h2>
